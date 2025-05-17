@@ -2,31 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PrairiePin | Legal Land to Latitude/Longitude</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-      background: #f7fafc;
-      color: #2d3748;
-    }
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
-    p {
-      font-size: 1rem;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="PrairiePin helps you convert legal land descriptions (LLD) into precise GPS coordinates. Because the grid doesn't have street signs." />
+  <title>PrairiePin</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <h1>Welcome to PrairiePin</h1>
-  <p>Helping you convert legal land descriptions to GPS coordinates—one lookup at a time.</p>
+<body class="bg-white text-gray-800">
+  <!-- Nav Bar -->
+  <header class="bg-white shadow p-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-green-700">PrairiePin</h1>
+    <nav class="space-x-4 text-sm">
+      <a href="#" class="hover:underline">Home</a>
+      <a href="#" class="hover:underline">About</a>
+      <a href="#" class="hover:underline">Contact</a>
+      <a href="https://prairiepin-auth.netlify.app" class="text-green-700 font-semibold hover:underline">Login</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-20 px-6 bg-green-50">
+    <h2 class="text-4xl font-bold mb-4">Because the grid doesn't have street signs.</h2>
+    <p class="text-lg max-w-2xl mx-auto">PrairiePin converts Dominion Land Survey (DLS) legal land descriptions into precise GPS coordinates — helping roadside support, land agents, and first responders find the unfindable.</p>
+  </section>
+
+  <!-- Product Tiles -->
+  <section class="max-w-5xl mx-auto py-16 px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div class="border rounded-xl p-6 shadow hover:shadow-lg transition">
+      <h3 class="text-xl font-semibold mb-2">Foundever Lite</h3>
+      <p class="text-sm text-gray-600 mb-4">Internal-use version designed for Foundever teams. Currently under evaluation.</p>
+      <a href="https://prairiepin.netlify.app" class="inline-block text-green-700 hover:underline">Open Lite Version</a>
+    </div>
+
+    <div class="border rounded-xl p-6 shadow hover:shadow-lg transition">
+      <h3 class="text-xl font-semibold mb-2">PrairiePin Pro</h3>
+      <p class="text-sm text-gray-600 mb-4">A polished version coming soon — designed for broader use by industry, government, and rural services.</p>
+      <span class="text-gray-500 italic">Coming soon</span>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-sm text-gray-500 py-6">
+    <p>&copy; 2025 PrairiePin. All rights reserved.</p>
+    <p>Need help? <a href="mailto:support@prairiepin.ca" class="text-green-700 hover:underline">support@prairiepin.ca</a></p>
+  </footer>
 </body>
 </html>
